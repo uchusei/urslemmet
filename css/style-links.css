@@ -343,7 +343,7 @@
    right: 0;
    pointer-events: none;
    z-index: 100;
-   display: block;
+   display: block!important;
    flex-wrap: wrap;
    align-content: center;
    justify-content: center;
