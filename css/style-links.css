@@ -335,6 +335,10 @@
 
 /* ------------------------- Nav - Navigation Bar -------------------------------------------------- */
 
+.navigation, .navigation.active, .navigation-menu, .navigation-menu.show {
+   display: block !important;
+}
+
 .navigation {
    position: fixed;
    top: 0;
