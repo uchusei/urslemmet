@@ -56,7 +56,7 @@
 }
 
 .loading-logo .loading-logo-inner svg path {
-   fill: var(--color-white);
+   fill: #CCFF1B;
    opacity: 0;
 }
 
@@ -101,7 +101,7 @@
 
 .navigation.navigation.navigation-is-open + .custom-cursor span svg path,
 .navigation.navigation.navigation-is-closing + .custom-cursor span svg path {
-   fill: var(--color-white);
+   fill: #000000;
 }
 
 /* Hover Init */
@@ -403,7 +403,7 @@ main.scrolled .navigation-bar {
 }
 
 .logo svg path {
-   fill: var(--color-white);
+   fill: #000000;
    transition: all var(--animation-nav);
 }
 
@@ -441,15 +441,15 @@ main.scrolled .navigation-bar {
 /*  Color Options based on Background  */
 
 /* .navigation.theme-nav-dark .navigation-bar {background: var(--color-dark);} */
-.navigation.theme-nav-dark .navigation-bar .bar {background: var(--color-light);}
-.navigation.theme-nav-dark .navigation-bar h4 {color: var(--color-white);}
-.navigation.theme-nav-dark .navigation-bar svg path {fill: var(--color-light);}
+.navigation.theme-nav-dark .navigation-bar .bar {background: #000000;}
+.navigation.theme-nav-dark .navigation-bar h4 {color: #000000;}
+.navigation.theme-nav-dark .navigation-bar svg path {fill: #000000;}
 .navigation.theme-nav-dark .navigation-bar .hamburger-icon .single-bar {background: var(--color-secondary);}
 
 /* .navigation.theme-nav-light .navigation-bar {background: var(--color-light);} */
 .navigation.theme-nav-light .navigation-bar .bar {background: var(--color-dark);}
 .navigation.theme-nav-light .navigation-bar h4 {color: var(--color-dark);}
-.navigation.theme-nav-light .navigation-bar svg path {fill: var(--color-dark);}
+.navigation.theme-nav-light .navigation-bar svg path {fill: #000000;}
 .navigation.theme-nav-light .navigation-bar .hamburger-icon .single-bar {background: var(--color-primary);}
 
 /* .navigation.theme-nav-primary .navigation-bar {background: var(--color-primary);} */
