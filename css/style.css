@@ -1947,6 +1947,7 @@ footer.section-wrap {
 .footer-bottom .footer-col {
    display: flex;
    flex-direction: column;
+   padding-right: 5vh;
 }
 
 .footer-bottom .footer-col h4 {
