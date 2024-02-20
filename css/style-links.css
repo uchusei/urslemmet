@@ -376,7 +376,7 @@ main.scrolled .navigation-bar {
    position: absolute;
    bottom: 0;
    height: 1px;
-   background: var(--color-white);
+   background: #000000;
    transition: background-color var(--animation-nav);
    transform-origin: left top;
 }
