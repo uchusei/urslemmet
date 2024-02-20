@@ -335,17 +335,13 @@
 
 /* ------------------------- Nav - Navigation Bar -------------------------------------------------- */
 
-.navigation, .navigation.active, .navigation-menu, .navigation-menu.show {
-   display: block !important;
-}
-
 .navigation {
    position: fixed;
    top: 0;
    left: 0;
    bottom: 0;
    right: 0;
-   pointer-events: none;
+   pointer-events: auto;
    z-index: 100;
    display: block!important;
    flex-wrap: wrap;
@@ -422,6 +418,7 @@ main.scrolled .navigation-bar {
    overflow: hidden;
    position: relative;
    cursor: pointer;
+   display: none !important;
 }
 
 .navigation-bar .hamburger-icon .single-bar {
@@ -661,7 +658,7 @@ main.scrolled .navigation.navigation-is-open .navigation-bar {
 
 .navigation-menu {
    position: relative;
-   pointer-events: none;
+   pointer-events: auto !important;
    padding-top: 5vh;
 }
 
