@@ -958,7 +958,11 @@ main.scrolled .navigation.navigation-is-open .navigation-bar {
 }
 
 
-/* ------------------------- Section - psst -------------------------------------------------- */
+/* ------------------------- Section - Psst -------------------------------------------------- */
+
+.section-psst {
+   padding-bottom: 17vw;
+}
 
 .section-home-psst .container:nth-child(2) .row:nth-child(1) {
    padding-top: var(--section-padding);
@@ -973,7 +977,6 @@ main.scrolled .navigation.navigation-is-open .navigation-bar {
    padding: 0.025em 0 0 0;
    margin: -0.25em 0 0 0;
 }
-
 
 .section-home-psst .text-row:nth-child(2) {
    align-items: flex-end;
