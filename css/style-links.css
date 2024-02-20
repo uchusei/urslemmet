@@ -347,7 +347,7 @@
    flex-wrap: wrap;
    align-content: center;
    justify-content: center;
-
+   background: #CCFF1B;
    --animation-nav: .25s ease-in-out;
 }
 
@@ -682,7 +682,7 @@ main.scrolled .navigation.navigation-is-open .navigation-bar {
 }
 
 .menu-item .click h2 {
-   font-size: 15vh;
+   font-size: 20vh;
    display: flex;
    justify-content: center;
    overflow: hidden;
@@ -740,6 +740,7 @@ main.scrolled .navigation.navigation-is-open .navigation-bar {
 
    .navigation-menu ul {
       gap: 0.5vh;
+      display: block!important;
    }
 
    .menu-item .click h2 {
