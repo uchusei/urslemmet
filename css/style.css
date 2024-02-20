@@ -1884,7 +1884,7 @@ footer.section-wrap {
 @media screen and (max-width: 540px) {
 
    .footer-top {
-      padding-top: calc(var(--section-padding) * 1.75);
+      padding-top: 5vh;
    }
 
    .footer-top h2 {
