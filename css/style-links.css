@@ -335,6 +335,14 @@
 
 /* ------------------------- Nav - Navigation Bar -------------------------------------------------- */
 
+.navigation-menu, .navigation-menu * {
+   visibility: visible;
+   opacity: 1;
+}
+.navigation-menu {
+   z-index: 1000!important; 
+}
+
 .navigation {
    position: fixed;
    top: 0;
