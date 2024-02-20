@@ -445,7 +445,11 @@ main {
 }
 
 .main-wrap {
-	display: none;
+	box-sizing: border-box;
+	width: 100vw;
+	will-change: transform;
+	position: fixed;
+	display: block;
 }
 
 main.touch {
