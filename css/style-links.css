@@ -447,22 +447,22 @@ main.scrolled .navigation-bar {
 .navigation.theme-nav-dark .navigation-bar .hamburger-icon .single-bar {background: var(--color-secondary);}
 
 /* .navigation.theme-nav-light .navigation-bar {background: var(--color-light);} */
-.navigation.theme-nav-light .navigation-bar .bar {background: var(--color-dark);}
-.navigation.theme-nav-light .navigation-bar h4 {color: var(--color-dark);}
+.navigation.theme-nav-light .navigation-bar .bar {background: #000000;}
+.navigation.theme-nav-light .navigation-bar h4 {color: #000000;}
 .navigation.theme-nav-light .navigation-bar svg path {fill: #000000;}
 .navigation.theme-nav-light .navigation-bar .hamburger-icon .single-bar {background: var(--color-primary);}
 
 /* .navigation.theme-nav-primary .navigation-bar {background: var(--color-primary);} */
 .navigation.theme-nav-primary .navigation-bar .bar {background: var(--color-light);}
 .navigation.theme-nav-primary .navigation-bar h4 {color: var(--color-white);}
-.navigation.theme-nav-primary .navigation-bar svg path {fill: var(--color-white);}
+.navigation.theme-nav-primary .navigation-bar svg path {fill: #000000;}
 .navigation.theme-nav-primary .navigation-bar .hamburger-icon .single-bar {background: var(--color-secondary);}
 
 /* .navigation.theme-nav-secondary .navigation-bar {background: var(--color-secondary);} */
-.navigation.theme-nav-secondary .navigation-bar .bar {background: var(--color-dark);}
-.navigation.theme-nav-secondary .navigation-bar h4 {color: var(--color-dark);}
-.navigation.theme-nav-secondary .navigation-bar svg path {fill: var(--color-dark);}
-.navigation.theme-nav-secondary .navigation-bar .hamburger-icon .single-bar {background: var(--color-dark);}
+.navigation.theme-nav-secondary .navigation-bar .bar {background: #000000;}
+.navigation.theme-nav-secondary .navigation-bar h4 {color: #000000;}
+.navigation.theme-nav-secondary .navigation-bar svg path {fill: #000000;}
+.navigation.theme-nav-secondary .navigation-bar .hamburger-icon .single-bar {background: #000000;}
 
 /*  Navigation Hover  */
 
@@ -479,7 +479,7 @@ main.scrolled .navigation-bar {
 /* .navigation.navigation-is-open .navigation-bar, .navigation.navigation-is-closing .navigation-bar {background: transparent;} */
 .navigation.navigation-is-open .navigation-bar .bar, .navigation.navigation-is-closing .navigation-bar .bar {background: var(--color-dark);}
 .navigation.navigation-is-open .navigation-bar h4, .navigation.navigation-is-closing .navigation-bar h4 {color: var(--color-dark);}
-.navigation.navigation-is-open .navigation-bar svg path, .navigation.navigation-is-closing .navigation-bar svg path {fill: var(--color-dark);}
+.navigation.navigation-is-open .navigation-bar svg path, .navigation.navigation-is-closing .navigation-bar svg path {fill: #000000;}
 .navigation.navigation-is-open .navigation-bar .hamburger-icon .single-bar, .navigation.navigation-is-closing .navigation-bar .hamburger-icon .single-bar {background: var(--color-dark);}
 
 main.scrolled .navigation.navigation-is-open .navigation-bar {
@@ -620,7 +620,7 @@ main.scrolled .navigation.navigation-is-open .navigation-bar {
 } */
 
 .accent-lines svg path {
-   fill: var(--color-dark);
+   fill: #000000;
 }
 
 .accent-lines svg g g {
@@ -1162,11 +1162,11 @@ main.scrolled .navigation.navigation-is-open .navigation-bar {
 }
 
 .single-slider .swiper-btn-big svg path {
-   fill: var(--color-primary);
+   fill: #000000;
 }
 
 .single-slider .swiper-btn-big svg:nth-child(2) path {
-   fill: var(--color-secondary);
+   fill: #000000;
 }
 
 .single-slider .swiper-btn-big svg:nth-child(1) {
@@ -2008,7 +2008,7 @@ footer.section-wrap {
 }
 
 .footer-bottom .footer-col a svg path {
-   fill: var(--color-light);
+   fill: #000000;
 }
 
 @media screen and (max-width: 720px) {
