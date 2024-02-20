@@ -1,0 +1,221 @@
+/* ------------------------- Random -------------------------------------------------- */
+
+.text-row {
+   display: flex;
+}
+
+.text-row.end {
+   justify-content: flex-end;
+}
+
+.text-row.center {
+   justify-content: center;
+}
+
+.text-row .split-words {
+   display: inline-flex;
+   flex-wrap: wrap;
+   gap: 0 .25em;
+}
+
+.split-words .single-word {
+   overflow: hidden;
+   padding: 0 0.025em;
+   margin: 0 -0.065em 0 -0.065em;
+}
+
+.split-words .single-word-inner {
+   position: relative;
+}
+
+h4 .split-words .single-word {
+   padding: 0 0.025em;
+}
+
+h2.split-words + h4 {
+   margin-top: 1em;
+}
+
+.split-lines .single-line {
+   overflow: hidden;
+   padding: 0 0 .15em 0;
+   margin: 0 0 -.05em 0;
+}
+
+.split-lines .single-line-inner {
+   position: relative;
+}
+
+.theme-primary {
+   background: var(--color-primary);
+   color: var(--color-white);
+}
+
+.theme-secondary {
+   background: var(--color-secondary);
+   color: var(--color-dark);
+}
+
+.theme-light {
+   background: var(--color-light);
+   color: var(--color-dark);
+}
+
+.theme-dark {
+   background: var(--color-dark);
+   color: var(--color-white);
+}
+
+/* ------------------------- Visual -------------------------------------------------- */
+
+.visual {
+   position: relative;
+   width: 100%;
+   background-color: var(--color-inactive);
+   overflow: hidden;
+}
+
+.visual::before {
+   content: "";
+   padding-top: 125%;
+   display: block;
+}
+
+.visual.cover {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: unset;
+
+   /* top: -5vh;
+   height: calc(100% + 10vh); */
+}
+
+.visual.cover::before {
+   padding-top: unset;
+}
+
+.visual .overlay-visual .overlay[data-scroll-speed="-1"]{
+   height: calc(100% + 10vh);
+   top: -10vh;
+}
+
+.visual .reveal {
+   position: absolute;
+   top: -1%;
+   left: -1%;
+   width: 102%;
+   height: 102%;
+   background: var(--color-primary);
+   transform: scaleY(0);
+   transform-origin: left top;
+}
+
+
+.visual .reveal.dark {background: var(--color-dark);}
+.visual .reveal.light {background: var(--color-light);}
+.visual .reveal.primary {background: var(--color-primary);}
+.visual .reveal.secondary {background: var(--color-secondary);}
+
+@media screen and (max-width: 1024px) { 
+   .visual .overlay-visual .overlay[data-scroll-speed="-1"]{
+      height: 100%;
+      top: unset;
+   }
+}
+
+/* ------------------------- Swiper Slider -------------------------------------------------- */
+
+.swiper-container {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   overflow: hidden;
+   position: relative;
+}
+
+.swiper-wrapper {
+	position: relative;
+	width: 100%;
+   -webkit-transform-style: preserve-3d;
+}
+
+.swiper-slide {
+   position: relative;
+   overflow: hidden;
+   -webkit-backface-visibility: hidden; 
+   -webkit-transform: translateZ(0);
+}
+
+.swiper-slide-inner {
+   position: relative;
+   overflow: hidden;
+}
+
+.swiper-wrapper, .swiper-slide-inner {
+   transition-timing-function: cubic-bezier(0.5, 0, 0.1, 1);
+   -webkit-backface-visibility: hidden; 
+   -webkit-transform: translateZ(0);
+}
+
+/*--- Progress Bar ---*/
+
+.swiper-slider .swiper-container .swiper-pagination {
+   position: relative;
+   width: 100%;
+   display: flex;
+   bottom: unset;
+   left: unset;
+   gap: 1em;
+   margin-top: 1.25em;
+}
+
+.swiper-slider .swiper-container .swiper-pagination-bullet {
+   height: 1em;
+   position: relative;
+   border-radius: 0;
+   margin: unset;
+   width: 100%;
+   background-color: transparent;
+   display: flex;
+   opacity: 1;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.swiper-slider .swiper-container .swiper-pagination-bullet::before {
+   content: "";
+   width: 100%;
+   height: 2px;
+   background-color: var(--color-dark);
+   opacity: .25;
+   position: absolute;
+}
+ 
+.swiper-slider .swiper-container .progress {
+   height: 2px;
+   position: absolute;
+   width: 100%;
+   background-color: var(--color-dark);
+   transform: scaleX(0);
+   transform-origin: left top;
+   opacity: 0;
+   transition: opacity .3s ease-in-out;
+}
+
+.swiper-slider .swiper-container .swiper-pagination-bullet-active .progress {
+   opacity: 1;
+}
+
+
+/*--- Progress Bar - Dark ---*/
+
+.theme-dark .swiper-slider .swiper-container .swiper-pagination-bullet::before {
+   background-color: var(--color-white);
+}
+
+.theme-dark .swiper-slider .swiper-container .progress {
+   background-color: var(--color-light);
+}
