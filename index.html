@@ -640,12 +640,7 @@
              </div>
              <div class="text-row">
                 <h2>
-                   <span class="alt split-words">Urslemmet </span>
-                </h2>
-             </div>
-             <div class="text-row">
-                <h2>
-                   <span class="alt split-words">här:</span>
+                   <span class="alt split-words">Urslemmet: </span>
                 </h2>
              </div>
           </div>
@@ -686,26 +681,32 @@
               </form>
 
 
-<script>
-document.getElementById('form').addEventListener('submit', function(event) {
-  event.preventDefault(); // Förhindrar att formuläret skickas på traditionellt sätt
-
-  // Skapa den nya HTML-strukturen som ska visas efter att formuläret "skickas"
-  var newContent = `
-  <div class="container">
-       <div class="row" id="target-kontakt">
-          <div class="flex-col">
-    <div class="text-row">
-      <center><h2>
-        <span class="alt split-words"><div style="position:relative;display:inline-block;" class="single-word"><div class="single-word-inner">Tack! Ditt meddelande är skickat.</div></div></span>
-      </h2></center>
-    </div>
-  `;
-
-  // Replace content in #target-kontakt with the new HTML structure
-  document.getElementById('target-kontakt').innerHTML = newContent;
-});
-</script>
+              <script>
+                document.getElementById('form').addEventListener('submit', function(event) {
+                  event.preventDefault(); // Förhindrar att formuläret skickas på traditionellt sätt
+                
+                  // Skapa den nya HTML-strukturen som ska visas efter att formuläret "skickas"
+                  var newContent = `
+                  <div class="container">
+                       <div class="row" id="target-kontakt">
+                          <div class="flex-col">
+                    <div class="text-row">
+                      <center><h2>
+                        <span class="alt split-words"><div style="position:relative;display:inline-block;" class="single-word"><div class="single-word-inner">Tack! Ditt meddelande är skickat.</div></div></span>
+                      </h2></center>
+                    </div>
+                  `;
+                
+                  // Ersätt innehållet i #target-kontakt med den nya HTML-strukturen
+                  document.getElementById('target-kontakt').innerHTML = newContent;
+                
+                  // Scrolla till #target-kontakt
+                  document.getElementById('target-kontakt').scrollIntoView({
+                    behavior: 'smooth'
+                  });
+                });
+                </script>
+                
 
 
          </div>
