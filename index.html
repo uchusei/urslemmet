@@ -692,6 +692,9 @@ document.getElementById('form').addEventListener('submit', function(event) {
 
   // Skapa den nya HTML-strukturen som ska visas efter att formuläret "skickas"
   var newContent = `
+  <div class="container">
+       <div class="row" id="target-kontakt">
+          <div class="flex-col">
     <div class="text-row">
       <h2>
         <span class="alt split-words"><div style="position:relative;display:inline-block;" class="single-word"><div class="single-word-inner">Frågor?</div></div></span>
@@ -715,7 +718,7 @@ document.getElementById('form').addEventListener('submit', function(event) {
     </div>
   `;
 
-  // Ersätt innehållet i #target-kontakt med den nya HTML-strukturen
+  // Replace content in #target-kontakt with the new HTML structure
   document.getElementById('target-kontakt').innerHTML = newContent;
 });
 </script>
