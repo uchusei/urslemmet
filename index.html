@@ -645,7 +645,7 @@
              </div>
           </div>
           <div class="flex-col">
-            <form class="apply-form" id="form" method="post" data-netlify="true" name="contactForm">
+            <form class="apply-form" id="form" method="post" data-netlify="true" name="kontakt">
                 <div class="field">
                   <label for="name">Namn <abbr title="required">*</abbr></label>
                   <input type="text" id="name" name="name" placeholder="Namn" required>
@@ -682,12 +682,10 @@
 
               <script>
                 document.getElementById('form').addEventListener('submit', function(event) {
-                  event.preventDefault(); // Stoppa formuläret från att skickas på traditionellt sätt.
+                  event.preventDefault();
                 
-                  // Förbered formulärdata för att skicka
                   var formData = new FormData(document.getElementById('form'));
                 
-                  // Använd fetch-API för att skicka formuläret med POST-metoden
                   fetch('/', {
                     method: 'POST',
                     headers: {
@@ -698,7 +696,7 @@
                   })
                   .then(response => {
                     if (response.ok) {
-                      // Visa anpassat tackmeddelande när formuläret har skickats framgångsrikt
+
                       var newContent = `
                       <div class="section theme-secondary section-home-big-title section-home-apply d-none" id="target-kontakt" data-scroll-section="">
                       <div class="container">
@@ -717,13 +715,13 @@
                         behavior: 'smooth'
                       });
                     } else {
-                      // Hantera fel (visar ett felmeddelande eller liknande)
+
                       alert('Ett fel uppstod. Försök igen senare.');
                     }
                   })
                   .catch(error => {
                     console.error('Fel vid skickande av formulär:', error);
-                    // Hantera nätverksfel (visar ett felmeddelande eller liknande)
+
                     alert('Ett nätverksfel uppstod. Försök igen senare.');
                   });
                 });
