@@ -747,7 +747,7 @@ main.scrolled .navigation.navigation-is-open .navigation-bar {
    }
 
    .navigation-menu {
-      padding-top: 0vh;
+      padding-top: 1vh;
    }
 }
 
