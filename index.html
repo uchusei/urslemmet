@@ -682,31 +682,53 @@
 
               <script>
                 document.getElementById('form').addEventListener('submit', function(event) {
-                  event.preventDefault(); // Förhindrar att formuläret skickas på traditionellt sätt
+                  event.preventDefault(); // Stoppa formuläret från att skickas på traditionellt sätt.
                 
-                  // Skapa den nya HTML-strukturen som ska visas efter att formuläret "skickas"
-                  var newContent = `
-                  <div class="section theme-secondary section-home-big-title section-home-apply d-none" id="target-kontakt" data-scroll-section="">
-                  <div class="container">
-                       <div class="row">
-                          <div class="flex-col">
-                    <div class="text-row">
-                      <center><h2>
-                        <span class="alt split-words"><div style="position:relative;display:inline-block;" class="single-word"><div class="single-word-inner">Tack! Ditt meddelande är skickat.</div></div></span>
-                      </h2></center>
-                    </div>
-                  `;
+                  // Förbered formulärdata för att skicka
+                  var formData = new FormData(document.getElementById('form'));
                 
-                  // Ersätt innehållet i #target-kontakt med den nya HTML-strukturen
-                  document.getElementById('target-kontakt').innerHTML = newContent;
+                  // Använd fetch-API för att skicka formuläret med POST-metoden
+                  fetch('/', {
+                    method: 'POST',
+                    headers: {
+                      'Accept': 'application/x-www-form-urlencoded;charset=UTF-8',
+                      'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+                    },
+                    body: new URLSearchParams(formData).toString()
+                  })
+                  .then(response => {
+                    if (response.ok) {
+                      // Visa anpassat tackmeddelande när formuläret har skickats framgångsrikt
+                      var newContent = `
+                      <div class="section theme-secondary section-home-big-title section-home-apply d-none" id="target-kontakt" data-scroll-section="">
+                      <div class="container">
+                           <div class="row">
+                              <div class="flex-col">
+                        <div class="text-row">
+                          <center><h2>
+                            <span class="alt split-words"><div style="position:relative;display:inline-block;" class="single-word"><div class="single-word-inner">Tack! Ditt meddelande är skickat.</div></div></span>
+                          </h2></center>
+                        </div>
+                      `;
                 
-                  // Scrolla till #target-kontakt
-                  document.getElementById('target-kontakt').scrollIntoView({
-                    behavior: 'smooth'
+                      document.getElementById('target-kontakt').innerHTML = newContent;
+                
+                      document.getElementById('target-kontakt').scrollIntoView({
+                        behavior: 'smooth'
+                      });
+                    } else {
+                      // Hantera fel (visar ett felmeddelande eller liknande)
+                      alert('Ett fel uppstod. Försök igen senare.');
+                    }
+                  })
+                  .catch(error => {
+                    console.error('Fel vid skickande av formulär:', error);
+                    // Hantera nätverksfel (visar ett felmeddelande eller liknande)
+                    alert('Ett nätverksfel uppstod. Försök igen senare.');
                   });
                 });
                 </script>
-
+                
          </div>
        </div>
     </div>
