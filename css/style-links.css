@@ -659,7 +659,7 @@ main.scrolled .navigation.navigation-is-open .navigation-bar {
 .navigation-menu {
    position: relative;
    pointer-events: auto !important;
-   padding-top: 14vh;
+   padding-top: 16vh;
 }
 
 .navigation-menu ul {
@@ -682,7 +682,7 @@ main.scrolled .navigation.navigation-is-open .navigation-bar {
 }
 
 .menu-item .click h2 {
-   font-size: 14vh;
+   font-size: 16vh;
    display: flex;
    justify-content: center;
    overflow: hidden;
