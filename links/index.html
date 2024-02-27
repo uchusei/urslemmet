@@ -250,7 +250,20 @@
 </svg></div>
 </h2></div></li>
 <li class="menu-item">
-    <div class="click navigation-trigger-close" data-target="#" data-number="Mejla" onclick="window.location.href='https://www.urslemmet.se/#target-kontakt'">
+    <div class="click navigation-trigger-close" data-target="#" data-number="Mejla" onclick="navigateToKontakt()">
+
+        <script>
+        function navigateToKontakt() {
+            window.location.href = 'https://www.urslemmet.se/#target-kontakt'; // Navigera till sidan
+            setTimeout(() => {
+                const element = document.getElementById('target-kontakt');
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }
+            }, 100); // Vänta lite innan skrollning för att säkerställa att sidan är laddad
+        }
+        </script>
+        
         <h2 class="text">
             <span class="normal">Kontakt</span>
             <span class="alt">Kontakt</span>
