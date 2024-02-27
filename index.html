@@ -684,6 +684,43 @@
                   </div>
                 </div>
               </form>
+
+
+<script>
+document.getElementById('form').addEventListener('submit', function(event) {
+  event.preventDefault(); // Förhindrar att formuläret skickas på traditionellt sätt
+
+  // Skapa den nya HTML-strukturen som ska visas efter att formuläret "skickas"
+  var newContent = `
+    <div class="text-row">
+      <h2>
+        <span class="alt split-words"><div style="position:relative;display:inline-block;" class="single-word"><div class="single-word-inner">Frågor?</div></div></span>
+      </h2>
+    </div>
+    <div class="text-row">
+      <h2>
+        <span class="alt split-words"><div style="position:relative;display:inline-block;" class="single-word"><div class="single-word-inner">Kontakta</div></div></span>
+      </h2>
+    </div>
+    <div class="text-row">
+      <h2>
+        <span class="alt split-words"><div style="position:relative;display:inline-block;" class="single-word"><div class="single-word-inner">Urslemmet</div></div> <div style="position:relative;display:inline-block;" class="single-word"><div class="single-word-inner">här:</div></div></span>
+      </h2>
+    </div>
+    <div class="flex-col">
+      <div class="alert-card success">
+        <h3><div>Sent!</div> <div>Tack!</div> Ditt meddelande är skickat.</h3>
+        <p class="big">Mejlen kollas sporadiskt någon gång per vecka.</p>
+      </div>
+    </div>
+  `;
+
+  // Ersätt innehållet i #target-kontakt med den nya HTML-strukturen
+  document.getElementById('target-kontakt').innerHTML = newContent;
+});
+</script>
+
+
          </div>
        </div>
     </div>
