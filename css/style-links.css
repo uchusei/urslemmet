@@ -682,7 +682,7 @@ main.scrolled .navigation.navigation-is-open .navigation-bar {
 }
 
 .menu-item .click h2 {
-   font-size: 16vh;
+   font-size: 9.5vh;
    display: flex;
    justify-content: center;
    overflow: hidden;
