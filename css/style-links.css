@@ -744,7 +744,7 @@ main.scrolled .navigation.navigation-is-open .navigation-bar {
    }
 
    .menu-item .click h2 {
-      font-size: min(13vw);
+      font-size: min(12vw);
    }
 }
 
