@@ -659,7 +659,7 @@ main.scrolled .navigation.navigation-is-open .navigation-bar {
 .navigation-menu {
    position: relative;
    pointer-events: auto !important;
-   padding-top: 16vh;
+   padding-top: 9vh;
 }
 
 .navigation-menu ul {
@@ -791,8 +791,8 @@ main.scrolled .navigation.navigation-is-open .navigation-bar {
 }
 
 .info-bottom .blinking-dot {
-   width: .75em;
-   height: .75em;
+   width: .95em;
+   height: .70em;
    border-radius: 50%;
    background: var(--color-secondary);
    margin-right: .45em;
