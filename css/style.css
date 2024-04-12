@@ -794,7 +794,7 @@ main.scrolled .navigation.navigation-is-open .navigation-bar {
 }
 
 .info-bottom .blinking-dot {
-   width: .95em;
+   width: .70em;
    height: .70em;
    border-radius: 50%;
    background: var(--color-secondary);
