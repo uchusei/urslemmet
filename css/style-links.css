@@ -582,14 +582,14 @@ main.scrolled .navigation.navigation-is-open .navigation-bar {
 @media screen and (max-width: 1024px) {
 
    .info-bottom .blinking-dot {
-    width: .70em;
-    height: .70em;
-    border-radius: 50%;
-    background: var(--color-secondary);
-    margin-right: .45em;
-    margin-top: .075em;
-    animation: blinkingDot 1s;
-    animation-iteration-count: infinite;
+    width: .95em!important;
+    height: .70em!important;
+    border-radius: 50%!important;
+    background: var(--color-secondary)!important;
+    margin-right: .45em!important;
+    margin-top: .075em!important;
+    animation: blinkingDot 1s!important;
+    animation-iteration-count: infinite!important;
  }
  }
 
