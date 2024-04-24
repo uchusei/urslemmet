@@ -584,7 +584,6 @@ main.scrolled .navigation.navigation-is-open .navigation-bar {
     width: .95em!important;
     height: .70em!important;
     border-radius: 50%!important;
-    background: var(--color-secondary)!important;
     margin-right: .45em!important;
     margin-top: .075em!important;
     animation: blinkingDot 1s!important;
