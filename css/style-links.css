@@ -672,7 +672,7 @@ main.scrolled .navigation.navigation-is-open .navigation-bar {
 .navigation-menu {
    position: relative;
    pointer-events: auto !important;
-   padding-top: 9vh;
+   padding-top: 0vh;
 }
 
 .navigation-menu ul {
