@@ -581,7 +581,7 @@ main.scrolled .navigation.navigation-is-open .navigation-bar {
 @media screen and (max-width: 1024px) {
 
    .info-bottom .blinking-dot {
-    width: .95em!important;
+    width: .85em!important;
     height: .70em!important;
     border-radius: 50%!important;
     margin-right: .45em!important;
